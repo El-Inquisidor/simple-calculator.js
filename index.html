@@ -1,0 +1,66 @@
+<!--
+Calculadora simple
+
+author: victor_merino
+-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="theme-color" content="#39FF33">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Calculator, calc">
+        <meta name="description" content="Calculadora hecha con JS">
+        <meta name="author" content="victor_merino">
+        <meta http-equiv="refresh" content="3000">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="calculator">
+        <meta name="twitter:title" content="Calculadora">
+        <meta name="twitter:description" content="Calculadora online">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon" sizes="16x16">
+        <link rel="stylesheet" href="style/style.css" type="text/css">
+        <script src="js/main.js" type="text/javascript" defer></script>
+        <script src="js/calc.js" type="text/javascript" defer></script>
+    </head>
+    <body>
+        <main>
+            <section id="panel">
+                <form action="">
+                    <input type="text" minlength="1" maxlength="16" disabled>
+                </form>
+                <p></p>
+            </section>
+            <section id="buttons-calc">
+                <div id="first-line-button">
+                    <button id="C-Button" class="margen-boton">C</button>
+                    <button id="R-Button" class="margen-boton">←</button>
+                    <button id="button-%" data-key="/">÷</button>
+                </div>
+                <div>
+                    <button id="button-7" data-key="7" class="margen-boton">7</button>
+                    <button id="button-8" data-key="8" class="margen-boton">8</button>
+                    <button id="button-9" data-key="9" class="margen-boton">9</button>
+                    <button id="button-x" data-key="*">x</button>
+                </div>
+                <div>
+                    <button id="button-4" data-key="4" class="margen-boton">4</button>
+                    <button id="button-5" data-key="5" class="margen-boton">5</button>
+                    <button id="button-6" data-key="6" class="margen-boton">6</button>
+                    <button id="button--" data-key="-">-</button>
+                </div>
+                <div>
+                    <button id="button-1" data-key="1" class="margen-boton">1</button>
+                    <button id="button-2" data-key="2" class="margen-boton">2</button>
+                    <button id="button-3" data-key="3" class="margen-boton">3</button>
+                    <button id="button-+" data-key="+">+</button>
+                </div>
+                <div>
+                    <button id="button-0" data-key="0" class="margen-boton">0</button>
+                    <button id="button-." data-key="." class="margen-boton">.</button>
+                    <button id="button-=" data-key="Enter">=</button>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
